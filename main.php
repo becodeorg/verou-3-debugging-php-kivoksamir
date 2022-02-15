@@ -64,7 +64,23 @@ function copyright(int $year): string
 echo copyright(intval(date('Y'))); //we need to  convert  string to int, then echo return..
 
 
+
+echo "<br>";
+
+// === Exercise 6 ===
+// The array should be printing every letter of the alphabet (a-z)
+// Fix the code so the for loop pushes each letter of the alphabet in the array
+$arr=[];    
+foreach (range('A', 'Z') as $char) { // first solution I founded the way but using ((foreach)) .. 
+array_push($arr, $char);
+
+}
+print_r($arr);
+
+
 };
+
+
 
 
 

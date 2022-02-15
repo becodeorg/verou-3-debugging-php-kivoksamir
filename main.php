@@ -23,6 +23,13 @@ function new_exercise()
     $x="our debugging is ";  // declare the vairable (x).
     $block = $x . "starts here:<br/>"; // <br> is an html tage cant be included in php code without ""
     echo $block;
+
+
+// === Exercise 2 ===
+$week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+$monday = $week[0];                      // array index starting form 0 not 1 .. 
+
+echo $monday;
 };
 
 new_exercise();

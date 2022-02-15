@@ -106,6 +106,33 @@ echo login('wrong@example', 'wrong');
 
 
 
+// === Exercise 8 ===
+// Check if the link is containing one of the below parts and respond with the correct message
+
+echo "<br>";
+
+function isLinkValid(string $link)
+{
+    $unacceptables = array('https:','.doc','.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png',);
+
+    foreach ($unacceptables as $unacceptable) {
+        if (strpos($link, $unacceptable) !==false) {  // (strops() .. finds the position of the first occurrence of a string inside another string.
+                                                      // change ==true with !==false , will only evaluate to false if $var is exactly false..
+            return 'Unacceptable Found<br />';
+        }
+    }
+    return 'Acceptable<br />';
+}
+//invalid link
+echo isLinkValid('http://www.google.com/hack.pdf');
+//invalid link
+echo isLinkValid('https://google.com');
+//VALID link
+echo isLinkValid('http://google.com');
+//VALID link
+echo isLinkValid('http://google.com/test.txt');
+
+
 };
 
 

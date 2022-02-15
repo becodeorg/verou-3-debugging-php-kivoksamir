@@ -30,6 +30,17 @@ $week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "su
 $monday = $week[0];                      // array index starting form 0 not 1 .. 
 
 echo $monday;
+
+
+echo "<br>";
+
+
+
+// === Exercise 3 ===
+
+
+$str="Debugged ! Also very fun";
+echo substr($str , 6,2);  // substring function counting (string,start,length)
 };
 
 new_exercise();

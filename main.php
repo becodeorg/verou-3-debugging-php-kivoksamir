@@ -41,6 +41,24 @@ echo "<br>";
 
 $str="Debugged ! Also very fun";
 echo substr($str , 6,2);  // substring function counting (string,start,length)
+
+
+echo "<br>";
+
+// === Exercise 4 ===
+foreach ($week as &$day) {  // add & the value will be assigned by reference.
+  $day = substr($day, 0, -3);
+}
+
+print_r($week);
+
 };
+
+
+
+
+
+
+
 
 new_exercise();

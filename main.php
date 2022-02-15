@@ -78,6 +78,34 @@ array_push($arr, $char);
 print_r($arr);
 
 
+
+// === Exercise 7 ===
+echo "<br>";
+
+
+function login(string $email, string $password): string
+{
+  if ($email == 'john@example.be' && $password == 'pocahontas') { // change (|| OR) with (&& and)...
+
+    return 'Welcome John' . ' Smith';    // use if {} else{} .. 
+  } else return 'No access';
+}
+
+
+/* do not change any code below */
+//should greet the user with his full name (John Smith)
+echo login('john@example.be', 'pocahontas');
+echo "<br>";
+
+//Should say: no access
+echo login('john@example.be', 'dfgidfgdfg');
+echo "<br>";
+
+//Should say: no access
+echo login('wrong@example', 'wrong');
+
+
+
 };
 
 

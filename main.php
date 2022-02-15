@@ -52,7 +52,20 @@ foreach ($week as &$day) {  // add & the value will be assigned by reference.
 
 print_r($week);
 
+
+echo "<br>";
+// === Exercise 5 ===
+// The result should be: "Copyright © <current year> - BeCode"
+function copyright(int $year): string
+{
+  return "Copyright &copy; $year - BeCode";
+}
+
+echo copyright(intval(date('Y'))); //we need to  convert  string to int, then echo return..
+
+
 };
+
 
 
 

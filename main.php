@@ -78,6 +78,20 @@ array_push($arr, $char);
 print_r($arr);
 
 
+// === Exercise 6 === secound solution
+
+
+$array=[];
+$letters = range("a","z"); // generate the the letters
+for($i=0 ; $i<count($letters); $i++){ // loop around it ..
+
+	array_push($array,$letters);
+
+};
+
+print_r($array);
+
+
 
 // === Exercise 7 ===
 echo "<br>";
